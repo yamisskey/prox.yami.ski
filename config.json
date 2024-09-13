@@ -1,6 +1,6 @@
 {
   "proxy_url": "https://prox.yami.ski",
-  "token_prefix": "/user22334455/",
+  "token_prefix": "/bdVu2D9ZPlQN/",
   "local_listen_port": 5006,
   "description": "注意:token_prefix相当于网站密码，请谨慎设置。 proxy_url和token_prefix合起来就是访问网址。"
 }
