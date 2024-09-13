@@ -47,7 +47,7 @@ A demonstration by a Telegram user of SiteProxy deployment and speed test with o
    - Execute the command: `git clone https://github.com/netptop/siteproxy.git`
 3. **Edit Configuration File**:
    - Open the `siteproxy/build/cf_page/_worker.js` file with a text editor.
-   - Search and replace the string `http://localhost:5006` with your proxy server domain, e.g., `https://your-proxy-domain.com` (ensure to use `https`).
+   - Search and replace the string `https://prox.yami.ski` with your proxy server domain, e.g., `https://your-proxy-domain.com` (ensure to use `https`).
    - Search and replace the string `user22334455` with your desired access password. If the password is empty, it means no password is required for access. Save the file.
 4. **Log in to Cloudflare**:
    - Go to the **Workers and Pages** section, choose **Create a Page by Direct Upload**, and upload the `siteproxy/build/cf_page` directory for deployment.
@@ -63,7 +63,7 @@ A demonstration by a Telegram user of SiteProxy deployment and speed test with o
    - Make sure your domain is managed under Cloudflare.
 2. **Download and Edit Worker File**:
    - Download the `build/worker.js` file: [link](https://raw.githubusercontent.com/netptop/siteproxy/master/build/worker.js), and open it with a text editor.
-   - Search and replace the string `http://localhost:5006` with your proxy server domain, e.g., `https://your-worker-domain.com` (ensure to use `https`).
+   - Search and replace the string `https://prox.yami.ski` with your proxy server domain, e.g., `https://your-worker-domain.com` (ensure to use `https`).
    - Search and replace the string `user22334455` with your desired access password. If the password is empty, it means no password is required for access.
 3. **Create Worker**:
    - Log in to Cloudflare, go to the **Workers and Pages** section, and create a Worker.
@@ -83,7 +83,7 @@ A demonstration by a Telegram user of SiteProxy deployment and speed test with o
      server {
         server_name your-proxy.domain.name;
         location / {
-          proxy_pass http://localhost:5006;
+          proxy_pass https://prox.yami.ski;
         }
      }
      ```
